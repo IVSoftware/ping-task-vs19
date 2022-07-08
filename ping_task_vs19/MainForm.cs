@@ -51,7 +51,7 @@ namespace ping_task_19
                     try
                     {
                     // https://stackoverflow.com/a/25654227/5438626
-                        if (Uri.TryCreate(textBoxUri.Text, UriKind.Absolute, out Uri? uri)
+                        if (Uri.TryCreate(textBoxUri.Text, UriKind.Absolute, out Uri uri)
                             && (uri.Scheme == Uri.UriSchemeHttp ||
                             uri.Scheme == Uri.UriSchemeHttps))
                         {
