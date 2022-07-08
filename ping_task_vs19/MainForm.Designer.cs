@@ -30,6 +30,7 @@
         {
             this.textBoxUri = new System.Windows.Forms.TextBox();
             this.labelStatus = new System.Windows.Forms.Label();
+            this.labelCountNothingForNoReason = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxUri
@@ -49,13 +50,23 @@
             this.labelStatus.TabIndex = 2;
             this.labelStatus.Text = "Status";
             // 
+            // labelCountNothingForNoReason
+            // 
+            this.labelCountNothingForNoReason.AutoSize = true;
+            this.labelCountNothingForNoReason.Location = new System.Drawing.Point(47, 170);
+            this.labelCountNothingForNoReason.Name = "labelCountNothingForNoReason";
+            this.labelCountNothingForNoReason.Size = new System.Drawing.Size(239, 25);
+            this.labelCountNothingForNoReason.TabIndex = 2;
+            this.labelCountNothingForNoReason.Text = "Count nothing for no reason";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 300);
-            this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.textBoxUri);
+            this.Controls.Add(this.labelStatus);
+            this.Controls.Add(this.labelCountNothingForNoReason);
             this.Name = "MainForm";
             this.Text = "Main Form";
             this.ResumeLayout(false);
@@ -67,5 +78,6 @@
 
         private System.Windows.Forms.TextBox textBoxUri;
         private System.Windows.Forms.Label labelStatus;
+        private System.Windows.Forms.Label labelCountNothingForNoReason;
     }
 }
